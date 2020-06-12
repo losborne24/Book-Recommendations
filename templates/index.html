@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="../static/index.css" />
+<script src="../static/index.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+<div class="container">
+  <div id="container-authentication">
+    <div class="tabs">
+      <button id="login-tab">Login</button>
+      <button id="register-tab">Register</button>
+    </div>
+    <div class="contents">
+      <div id="login-contents">
+        <p>Enter User ID:</p>
+        <input id="input-user" />
+        <button id="btn-login">Login</button>
+        <p id="register-information">
+          User ID not found. Try again or register a new User ID.
+        </p>
+      </div>
+      <div id="register-contents">
+        <button id="btn-register">Generate New User ID</button>
+        <p id="new-id"></p>
+        <p id="login-information">You can now login using this User ID.</p>
+      </div>
+    </div>
+  </div>
+  <div id="container-logged-in">
+    <div class="tabs">
+      <button id="ratings-tab">Ratings</button>
+      <button id="recommendations-tab">Recommendations</button>
+    </div>
+    <div class="contents">
+      <div id="ratings-contents">
+        <p>Your book ratings:</p>
+        <div class="ratings-container">
+          <div class="ratings-grid">
+            <div id="ratings-head">
+              <div class="item">
+                <p>Book Name:</p>
+              </div>
+              <div class="item">
+                <p>Rating:</p>
+              </div>
+              <div class="item">
+                <p></p>
+              </div>
+              <div class="item">
+                <p></p>
+              </div>
+            </div>
+
+            <div id="ratings-tail">
+
+            </div>
+          </div>
+        </div>
+        <p>Submit new book rating:</p>
+
+        <div id="new-rating-container">
+          <div id="new-rating-grid">
+
+            <input id="txt-book-name" placeholder="Book Name:" />
+            <input id="txt-rating" placeholder="Rating:" />
+            <button id="btn-submit">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div id="recommendations-contents">
+        <h5>Your book recommendations:</h5>
+
+        <div class="recommendations-container">
+          <div class="recommendations-grid">
+            <div id="recommendations-head">
+              <div class="recommended-item">
+                <p>Book ID:</p>
+              </div>
+              <div class="recommended-item">
+                <p>Book Name:</p>
+              </div>
+              <div class="recommended-item">
+                <p>Genre:</p>
+              </div>
+
+            </div>
+
+            <div id="recommendations-tail">
+            </div>
+          </div>
+        </div>
+        <h5>*Recommendations may take a few seconds to load.</h5>
+
+      </div>
+    </div>
+    <div class="tabs-bottom">
+      <button id="logout-tab">Logout</button>
+      <button id="delete-account-tab">Delete Account</button>
+    </div>
+  </div>
+  <div id="pop-up-container">
+    <div id="pop-up-new-ratings">
+      <div id="pop-up-new-container">
+        <p id="new-message"></p>
+        <button id="btn-new">Close</button>
+      </div>
+      <button class="btn-ratings-exit" onclick="popUpClose()">x</button>
+    </div>
+    <div id="pop-up-edit-ratings">
+      <div id="pop-up-edit-container">
+        <p id="edit-message"></p>
+        <p>New rating:
+          <input id="input-rating" /></p>
+        <button id="btn-edit">Submit</button>
+      </div>
+      <button class="btn-ratings-exit" onclick="popUpClose()">x</button>
+    </div>
+    <div id="pop-up-delete-account">
+      <div id="pop-up-delete-account-container">
+        <p id="delete-message"></p>
+        <button id="btn-delete-account">Delete Account</button>
+      </div>
+      <button class="btn-ratings-exit" onclick="popUpClose()">x</button>
+    </div>
+  </div>
+
+</div>
