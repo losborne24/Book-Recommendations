@@ -1,4 +1,4 @@
-Assignment: Book Recommendations (Web personalisation)
+Assignment: Book Recommendations (Web personalisation) [Python, Flask, JavaScript]
 
 A book recommendation system programmed in python using flask to create a web-based application.
 Program uses a sample dataset from GoodBooks and uses a recommendation system based on matrix factorisation - https://beckernick.github.io/matrix-factorization-recommender/
